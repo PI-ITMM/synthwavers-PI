@@ -1,7 +1,7 @@
-# H1 synthwavers-PI
+# synthwavers-PI
 команда синтвейверов ПИшников
 ****
-## H2 Роли в команде:
+## Роли в команде:
 * Тимофей Баландин -- Product Owner
 * Владимир Комин -- Scrum Master
 * Растен Ремизов -- Developer
