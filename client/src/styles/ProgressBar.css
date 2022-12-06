@@ -1,0 +1,61 @@
+.progress {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.slider {
+    appearance: none;
+    width: 98px;
+    height: 4px;
+    background: white;
+    outline: none;
+    border-radius: 99999px;
+    opacity: 0.6;
+    animation: disappearSlider 0.5s ease forwards;
+}
+
+.slider:hover {
+    animation: appearSlider 0.5s ease forwards;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 162, 255);
+    border-radius: 9999px;
+}
+
+.slider::-moz-range-thumb {
+    width: 4px;
+    height: 4px;
+    background: blueviolet;
+    border-radius: 9999px;
+}
+
+.tooltip {
+    color: #d3d3d3;
+    font-size: 0.8rem;
+}
+
+@keyframes appearSlider {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappearSlider {
+    100% {
+        opacity: 0.6;
+    }
+    0% {
+        opacity: 1;
+    }
+}
